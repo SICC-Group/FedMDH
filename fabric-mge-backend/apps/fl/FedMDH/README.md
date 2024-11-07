@@ -1,13 +1,36 @@
 
 # FedMDH: A Federated Learning Framework for Effective Sharing of Multi-Dimensional Heterogeneous Materials Data
 
-Research code that accompanies the paper [FedMDH: A Federated Learning Framework for Effective Sharing of Multi-Dimensional Heterogeneous Materials Data].<br>
+This Repository contains the code that accompanies the paper [FedMDH: A Federated Learning Framework for Effective Sharing of Multi-Dimensional Heterogeneous Materials Data], including the source codes for the project's platform foundation ([MatSwarm](https://rdcu.be/dYm1R)) and FedMDH related algorithms [FedMDH](fabric-mge-backend/apps/fl/FedMDH)）.
+<br>
 <br>
 To overcome these challenges, we introduce FedMDH, a federated learning framework designed to tackle Multi-Dimensional Heterogeneity. While FedMDH is applicable to various downstream tasks, this work focuses on the widespread, complex, and underexplored regression tasks in materials science.<br> 
 <br>
 Our experiments on real-world datasets from the [NMDMS platform](http://mged.nmdms.ustb.edu.cn/analytics/) demonstrate that FedMDH significantly outperforms existing methods, offering superior accuracy and enhanced generalization across multi-dimensional heterogeneity. The successful deployment of FedMDH within the NMDMS platform further unlocks the full potential of material data, accelerates material discovery, and meets the demands of high-throughput computing and experimentation.
 
-## Dataset
+# Project basis: MatSwarm
+MatSwarm is the official demonstration project for the NMDMS federated computing system. FedMDH is tested based on the MatSwarm platform. A demonstrate video is here：
+
+[![FedMDH Showcase](https://res.cloudinary.com/marcomontalbano/image/upload/v1730950248/video_to_markdown/images/youtube--f7w9tbDljNQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/f7w9tbDljNQ "FedMDH Showcase")
+
+Experiments in papers and presentation videos can be replicated based on the platform. Please refer to the installation and instructions via this link:[MatSwarm-README.en.md](MatSwarm-README.en.md)
+
+More details could be referred to the following paper: [MatSwarm](https://rdcu.be/dYm1R).
+
+```
+@article{wang2024matswarm,
+  title={Matswarm: trusted swarm transfer learning driven materials computation for secure big data sharing},
+  author={Wang, Ran and Xu, Cheng and Zhang, Shuhao and Ye, Fangwen and Tang, Yusen and Tang, Sisui and Zhang, Hangning and Du, Wendi and Zhang, Xiaotong},
+  journal={Nature Communications},
+  volume={15},
+  number={9290},
+  pages={1-14},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
+## FedMDH Dataset
 
 **Perovskite Dataset**
 
@@ -138,14 +161,15 @@ Ensure that any remaining module-specific dependencies are properly configured w
 
 ## Run Experiments: 
 
+All source codes and data of FedMDH are in the folder [FedMDH](fabric-mge-backend/apps/fl/FedMDH).
+
 Refer to the main file "main.py" which allows running all experiments.
 
 #### Run experiments on the *Perovskite Dataset* Dataset:
 ```
-python main.py --dataset Material --algorithm FedMDH --batch_size 64 --num_glob_iters 200 --local_epochs 10 --num_users 3
+python main.py --dataset Material-alpha0.1-ratio0.5 --algorithm FedMDH --batch_size 64 --num_glob_iters 200 --local_epochs 10 --num_users 3
 
 ----
 
 =======
 # FedMDH
-
