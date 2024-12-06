@@ -3,7 +3,7 @@
 
 This Repository contains the code that accompanies the paper [FedMDH: A Federated Learning Framework for Effective Sharing of Multi-Dimensional Heterogeneous Materials Data], including the source codes for the project's platform foundation ([MatSwarm](https://rdcu.be/dYm1R)) and FedMDH related algorithms ([FedMDH](fabric-mge-backend/apps/fl/FedMDH)）.
 
-Supplementary Materials and Videos could also be found [here](fabric-mge-backend/apps/fl/FedMDH).
+Supplementary Materials and Videos could also be found [here](fabric-mge-backend/apps/fl/FedMDH). For further details, please refer to the [Slides](FedMHD Slides.pdf).
 <br>
 <br>
 To overcome these challenges, we introduce FedMDH, a federated learning framework designed to tackle Multi-Dimensional Heterogeneity. While FedMDH is applicable to various downstream tasks, this work focuses on the widespread, complex, and underexplored regression tasks in materials science.<br> 
