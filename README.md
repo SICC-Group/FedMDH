@@ -16,4 +16,4 @@ FedMDH Showcase is displayed in the following video. More introductory videos co
 
 [![FedMDH Showcase](https://res.cloudinary.com/marcomontalbano/image/upload/v1730950248/video_to_markdown/images/youtube--f7w9tbDljNQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/f7w9tbDljNQ "FedMDH Showcase")
 
-Experiments in papers and presentation videos can be replicated based on the platform. Please refer to the installation and instructions via [MatSwarm Instructions](MatSwarm-README.en.md). More details could be referred to the following paper: [MatSwarm](https://rdcu.be/dYm1R).
+Experiments in papers and presentation videos can be replicated based on the platform. Please refer to the installation and instructions via [MatSwarm Instructions](MatSwarm-README.en.md). More details could be referred to the paper [MatSwarm](https://rdcu.be/dYm1R).
